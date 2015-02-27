@@ -1,6 +1,6 @@
 {
   "name": "color-rgb",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "description": "color-rgb",
   "main": "dist/cjs.js",
   "scripts": {
