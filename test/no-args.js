@@ -1,3 +1,3 @@
 /* jshint devel: true */
 
-import Rgb from "../rgb";
+// import Rgb from "../rgb";
