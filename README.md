@@ -1,1 +1,1 @@
-# rgb
+# color-rgb

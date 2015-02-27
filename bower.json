@@ -1,8 +1,8 @@
 {
-  "name": "rgb",
-  "main": "rgb.js",
+  "name": "color-rgb",
+  "main": "color-rgb.js",
   "version": "0.0.0",
-  "homepage": "https://github.com/ileri/rgb",
+  "homepage": "https://github.com/ileri/color-rgb",
   "authors": [
     "Malte-Maurice Dreyer <dreyer.maltem+dev@gmail.com>"
   ],

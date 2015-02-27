@@ -1,7 +1,7 @@
 {
-  "name": "rgb",
+  "name": "color-rgb",
   "version": "0.1.1",
-  "description": "rgb",
+  "description": "color-rgb",
   "main": "dist/cjs.js",
   "scripts": {
     "test": "grunt test",
@@ -9,18 +9,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ileri/rgb.git"
+    "url": "https://github.com/ileri/color-rgb.git"
   },
   "keywords": [
-    "rgb",
+    "color-rgb",
     "color"
   ],
   "author": "Malte-Maurice Dreyer <dreyer.maltem@gmail.com>",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/ileri/rgb/issues"
+    "url": "https://github.com/ileri/color-rgb/issues"
   },
-  "homepage": "https://github.com/ileri/rgb",
+  "homepage": "https://github.com/ileri/color-rgb",
   "devDependencies": {
     "array-like-object-wrapper": "^0.1.0",
     "babel": "^4.4.6",

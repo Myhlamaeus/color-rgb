@@ -21,7 +21,7 @@ module.exports = function (grunt) {
     // Define the configuration for all the tasks
     grunt.initConfig({
         "config": {
-            "main": "rgb",
+            "main": "color-rgb",
             "global": "Rgb"
         },
         "watch": {
