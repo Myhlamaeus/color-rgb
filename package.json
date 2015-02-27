@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/ileri/color-rgb",
   "devDependencies": {
-    "array-like-object-wrapper": "^0.1.0",
     "babel": "^4.4.6",
     "grunt": "^0.4.5",
     "grunt-babel": "^4.0.0",
@@ -35,5 +34,7 @@
     "mocha": "^2.1.0",
     "time-grunt": "^1.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "array-like-object-wrapper": "^0.1.0"
+  }
 }
