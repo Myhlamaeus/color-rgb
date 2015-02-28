@@ -71,10 +71,6 @@ class Rgb extends ArrayLikeObjectWrapper {
         return "#" + pad(this.valueOf().toString(16), 6);
     }
 
-    get length() {
-        return 3;
-    }
-
     * keys() {
         for(let key of Rgb.keys) {
             yield key;
