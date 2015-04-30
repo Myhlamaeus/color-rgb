@@ -29,6 +29,19 @@ class Rgb extends ArrayLikeObjectWrapper {
   constructor (iterable) {
     let arr = new Uint8Array(3)
 
+    super(arr)
+
+    if (iterable) {
+      let i = 0
+
+      for (let val of iterable) {
+        if (i >= this.length) {
+          throw new RangeError('Rgb: iterable is too long')
+        }
+        arr[i++] = val >>> 0
+      }
+    }
+
     {
       const spec = {}
 
@@ -45,19 +58,6 @@ class Rgb extends ArrayLikeObjectWrapper {
       }
       Object.defineProperties(this, spec)
     }
-
-    if (iterable) {
-      let i = 0
-
-      for (let val of iterable) {
-        if (i >= this.length) {
-          throw new RangeError('Rgb: iterable is too long')
-        }
-        arr[i++] = val >>> 0
-      }
-    }
-
-    super(arr)
   }
 
   valueOf () {
