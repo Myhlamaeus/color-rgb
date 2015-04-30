@@ -1,1 +1,1 @@
-# color-rgb [![Code Climate](https://codeclimate.com/github/ileri/color-rgb/badges/gpa.svg)](https://codeclimate.com/github/ileri/color-rgb)
+# color-rgb [![Code Climate](https://codeclimate.com/github/ileri/color-rgb/badges/gpa.svg)](https://codeclimate.com/github/ileri/color-rgb) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
