@@ -21,7 +21,7 @@
     "color",
     "color-rgb"
   ],
-  "license": "GPL-3.0",
+  "license": "MIT",
   "main": "dist/color-rgb.js",
   "repository": {
     "type": "git",
