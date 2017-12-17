@@ -1,6 +1,6 @@
 {
   "name": "color-rgb",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A color, represented as red, green, and blue",
   "homepage": "https://github.com/Myhlamaeus/color-rgb",
   "author": {
