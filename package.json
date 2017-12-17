@@ -1,34 +1,67 @@
 {
   "name": "color-rgb",
-  "description": "color-rgb",
   "version": "0.2.0",
-  "author": "Malte-Maurice Dreyer <dreyer.maltem+dev@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/ileri/color-rgb/issues"
+  "description": "A color, represented as red, green, and blue",
+  "homepage": "https://github.com/Myhlamaeus/color-rgb",
+  "author": {
+    "name": "Malte-Maurice Dreyer",
+    "email": "dreyer.maltem+dev@gmail.com",
+    "url": "https://github.com/Myhlamaeus"
   },
-  "dependencies": {
-    "array-like-object-wrapper": "^0.2.1"
-  },
+  "files": ["lib"],
+  "main": "lib/index",
+  "keywords": ["color", "colour", "red", "green", "blue", "rgb"],
   "devDependencies": {
-    "babel": "^5.1.13",
-    "gulp": "^3.8.11",
-    "gulp-babel": "^5.1.0",
-    "gulp-mocha": "^2.0.1",
-    "gulp-sourcemaps": "^1.5.2"
+    "coveralls": "^2.13.1",
+    "eslint": "^4.1.0",
+    "eslint-config-prettier": "^2.4.0",
+    "eslint-config-xo": "^0.18.2",
+    "eslint-plugin-prettier": "^2.4.0",
+    "husky": "^0.14.3",
+    "jest": "^21.0.0",
+    "jest-cli": "^21.0.0",
+    "lint-staged": "^4.2.1",
+    "nsp": "^2.6.3",
+    "prettier": "^1.7.0"
   },
-  "homepage": "https://github.com/ileri/color-rgb",
-  "keywords": [
-    "color",
-    "color-rgb"
-  ],
-  "license": "MIT",
-  "main": "dist/color-rgb.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ileri/color-rgb.git"
+  "engines": {
+    "node": ">=6"
   },
   "scripts": {
-    "prepublish": "gulp build",
-    "test": "standard {test/,lib/,./}*.js && gulp test"
+    "prepublish": "nsp check",
+    "pretest": "eslint .",
+    "precommit": "lint-staged",
+    "test": "jest"
+  },
+  "lint-staged": {
+    "*.js": ["eslint --fix", "git add"],
+    "*.json": ["prettier --write", "git add"]
+  },
+  "eslintConfig": {
+    "extends": ["xo", "prettier"],
+    "env": {
+      "jest": true,
+      "node": true
+    },
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "singleQuote": true,
+          "printWidth": 90
+        }
+      ]
+    },
+    "plugins": ["prettier"]
+  },
+  "repository": "git@github.com:Myhlamaeus/color-rgb.git",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@std/esm": "^0.18.0",
+    "fixed-length-arrays": "^0.1.1",
+    "left-pad": "^1.2.0"
   }
 }
